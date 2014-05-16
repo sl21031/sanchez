@@ -7,7 +7,9 @@
 
 #ifndef FRACTION_HPP_
 #define FRACTION_HPP_
-
+#include <iostream>
+#include <string>
+#include <sstream>
 namespace std {
 
 class Fraction {
@@ -19,9 +21,11 @@ public:
 	int getNumerateur();
 	void setDenominateur(int &iDenominateur);
 	void setNumerateur(int &iNumerateur);
-	std::string& afficher(int &iDenominateur,int &iNumerateur);
-	//void addition(int iDenominateur,int iNumerateur);
-	//void addition(const Fraction&);
+    string& afficher(int &iDenominateur,int &iNumerateur);
+	void addition(int iDenominateur,int iNumerateur);
+	void addition(const Fraction&);
+	//void operator+(int)
+	//void operator+(const Fraction&)
 
 private:
 	int _numerateur;

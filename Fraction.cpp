@@ -6,10 +6,14 @@
  */
 
 #include "Fraction.hpp"
-
+using namespace std;
+#include <iostream>
+#include <string>
+#include <sstream>
 namespace std {
 
-Fraction::Fraction() {
+Fraction::Fraction(){_denominateur=0;
+_numerateur=0;
 	// TODO Auto-generated constructor stub
 
 }
@@ -42,14 +46,29 @@ int Fraction::getDenominateur()
 	return _numerateur;
 }
 
-string& Fraction::afficher(int &iNumerateur,int &iDenominateur)
-	string c;
-	c = iDenominateur + "/"+ iNumérateur;
-	return c;
+std::string& Fraction::afficher(int &iNumerateur,int &iDenominateur)
+{
+	std::string a,b,c;
+	a=iDenominateur;
+	b=iNumerateur;
+	c.insert(1,b);
+	c.insert(1,"/");
+	c.insert(1, a);
+	cout<<c<<endl;
 
 }
-//Fraction::addition()
-//void addition(const Fraction&)
+
+//void Fraction::addition(int iDenominateur,int iNumerateur)
+//{
+
+
+	//int E;
+	//E=
+
+
+
+//void Fraction::addition(const Fraction&)
+
 
 
 
