@@ -17,9 +17,11 @@ public:
 	Fraction(int n, int d);
 	int getDenominateur();
 	int getNumerateur();
-	void setDenominateur(int iDenominateur);
-	void setNumerateur(int iNumerateur);
-	string afficher(int iDenominateur,int iNumerateur);
+	void setDenominateur(int &iDenominateur);
+	void setNumerateur(int &iNumerateur);
+	std::string& afficher(int &iDenominateur,int &iNumerateur);
+	//void addition(int iDenominateur,int iNumerateur);
+	//void addition(const Fraction&);
 
 private:
 	int _numerateur;

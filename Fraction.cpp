@@ -14,7 +14,7 @@ Fraction::Fraction() {
 
 }
 
-Fraction::Fraction(int n, int d)
+Fraction::Fraction(int _numerateur, int _denominateur)
 {
 
 }
@@ -23,12 +23,12 @@ Fraction::~Fraction() {
 	// TODO Auto-generated destructor stub
 }
 
-Fraction::setDenominateur(int iDenominateur)
+void Fraction::setDenominateur(int &iDenominateur)
 {
-	_denominateur=iDenominateur;
+_denominateur=iDenominateur;
 
 }
-Fraction::setNumerateur(int iNumerateur)
+void Fraction::setNumerateur(int &iNumerateur)
 {
 	_numerateur= iNumerateur;
 }
@@ -42,17 +42,14 @@ int Fraction::getDenominateur()
 	return _numerateur;
 }
 
-string Fraction::afficher(int iDenominateur,int iNumerateur)
-{
-	string a,b,c;
-
-
-	c=iDenominateur/iNumérateur;
-
+string& Fraction::afficher(int &iNumerateur,int &iDenominateur)
+	string c;
+	c = iDenominateur + "/"+ iNumérateur;
 	return c;
 
 }
-
+//Fraction::addition()
+//void addition(const Fraction&)
 
 
 
